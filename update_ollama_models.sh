@@ -21,7 +21,7 @@ for llm in $llm_list; do
 done
 }
 
-for getopts "dhl" opt; do
+while getopts "dhl" opt; do
   case ${opt} in
     d)
       update_docker
