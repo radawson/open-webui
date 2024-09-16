@@ -27,8 +27,11 @@ for getopts "dhl" opt; do
       update_docker
       ;;
     h )
-      echo "Usage: update_llm.sh"
-      echo "Updates all LLMs installed in the Docker container"
+      echo "Usage: update_llm.sh [options]"
+      echo "Options:"
+      echo "-d Updates all LLMs installed in the Docker container"
+      echo "-l Updates all LLMs installed locally"
+      echo "Updates all LLMs installed in locally if no options are provided"
       exit 0
       ;;
     l)
